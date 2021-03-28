@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Starter Snowpack App" />
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/_dist_/styles/index.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="/dist/styles.css" /> -->
+    <title>Matter - Tap into...what matters!</title>
+</head>
+<body class="antialiased overflow-y-scroll min-h-screen bg-cover font-body">
+    <div class="code-folder matter">
+      <div class="hero w-full  bg-green-100">
+        <include src="partials/matter/_nav-public.html"></include>
+        <include src="partials/matter/_header.html"></include>
+        <include src="partials/matter/_recently-popular.html"></include>
+      </div>
+      <include src="partials/matter/_latest-articles-and-topics.html"></include>
+    </div>
+    <script type="module" src="%PUBLIC_URL%/_dist_/scripts/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+/* Build-time imports: https://tailwindcss.com/docs/using-with-preprocessors#build-time-imports */
+/* You can either use @tailwind rules, or import from node_modules directly. Since, we have custom components we'll have to choose the later style */
+/* @tailwind base; */
+@import "tailwindcss/base"; 
+
+/* @tailwind components; */
+@import "tailwindcss/components";
+@import "./components/index"; /* from @root = parallel to where node_modules is */
+
+/* @tailwind utilities; */
+@import "tailwindcss/utilities";
+
+
+/* https://tailwindcss.com/docs/functions-and-directives#layer */
+/* Use the @layer directive to tell Tailwind which "bucket" a set of custom styles belong to. Valid layers are a base, components, and utilities. */
+@layer components {
+    .btn-blue {
+      @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+    }
+    .btn-blue:hover {
+      @apply bg-blue-700;
+    }
+  }
+
+/* CSS SCSS-like nesting example */
+
+.phone {
+  &_title {
+      width: 500px;
+      @media (max-width: 500px) {
+          width: auto;
+      }
+      body.is_dark & {
+          color: white;
+      }
+  }
+  img {
+      display: block;
+  }
+}
+
+.title {
+  font-size: var(--font);
+
+  @at-root html {
+      --font: 16px
+  }
+}
