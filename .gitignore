@@ -118,3 +118,4 @@ dist
 .snowpack
 
 .DS_Store
+build

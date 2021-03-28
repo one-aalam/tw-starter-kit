@@ -17,3 +17,7 @@ This scaffold ships with
 
 ## Sample Screenshot
 <img src="./public/blog-shot.png"/>
+
+
+## Known Issues
+There is some issue with the final CSS which I'm currently looking into

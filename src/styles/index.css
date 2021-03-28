@@ -5,8 +5,9 @@
 
 /* @tailwind components; */
 @import "tailwindcss/components";
-@import "./components/index"; /* from @root = parallel to where node_modules is */
-
+/*from @root = parallel to where node_modules is*/
+@import "./components/button";
+@import "./components/card"; 
 /* @tailwind utilities; */
 @import "tailwindcss/utilities";
 
