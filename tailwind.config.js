@@ -1,5 +1,7 @@
 module.exports = {
-    purge: [],
+    purge: [
+      /* See postcss.config.js for purge configuration */
+    ],
     darkMode: false, // or 'media' or 'class'
     theme: {
       fontFamily: {

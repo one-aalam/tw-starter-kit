@@ -17,7 +17,7 @@ module.exports = {
         //         "watch": "postcss src/styles/index.css -o dist/styles.css -w"
         //     }
         // ],
-        ["./plugins/posthtml-snowpack-plugin.js", {/* pluginOptions */ }]
+        ["./plugins/posthtml-snowpack-plugin.js", {/* pluginOptions */ }],
     ],
     "devOptions": {
         "port": 3000,
